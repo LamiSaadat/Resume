@@ -37,25 +37,37 @@
 \fancyhf{} % clear all header and footer fields
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
+\renewcommand{\footrualewidth}{0pt}
 
 % Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+% \addtolength{\oddsidemargin}{-0.5in}
+% \addtolength{\evensidemargin}{-0.1in}
+% \addtolength{\textwidth}{1in}
+% \addtolength{\topmargin}{-.75in}
+% \addtolength{\textheight}{1.0in}
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.2in}
+\addtolength{\topmargin}{-0.8in}
+\addtolength{\textheight}{1.4in}
 
 \urlstyle{same}
 
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
+\setlength{\parskip}{0.5pt}
+\setlength{\itemsep}{-2pt}
 
 % Sections formatting
+% \titleformat{\section}{
+%   \vspace{-8pt}\scshape\raggedright\large
+% }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
 \titleformat{\section}{
-  \vspace{-8pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -96,7 +108,7 @@
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.16in]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
@@ -106,73 +118,55 @@
 \begin{document}
 
 %----------HEADING----------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
-% \end{tabular*}
-
 \begin{center}
     \textbf{\Huge \scshape Lamisa Saadat} \\ \vspace{4pt}
-    \href{mailto:ls.lamisa12@gmail.com}{\underline{ls.lamisa12@gmail.com}} $|$ 
-    \href{http://www.linkedin.com/in/lamisaadat}{\underline{linkedin.com/in/lamisaadat}} $|$
-    \href{https://github.com/LamiSaadat}{\underline{github.com/LamiSaadat}} $|$
-    \href{http://www.lamisaadat.com}{\underline{lamisaadat.com}}
-    \vspace{4pt} 
-    \newline\small Toronto, ON, Canada 
+    \href{mailto:ls.lamisa12@gmail.com}{\underline{Email}} $|$ 
+    \href{http://www.linkedin.com/in/lamisaadat}{\underline{LinkedIn}} $|$
+    \href{https://github.com/LamiSaadat}{\underline{Github}} $|$
+    \href{http://www.lamisaadat.com}{\underline{Portfolio}}
 \end{center}
-
-%-----------PROFILE-----------
-% \section{Profile}
-%  \begin{itemize}[leftmargin=0.15in, label={}]
-%     \small{\item{
-%      {Experienced product manager with a 4-year track record in app testing and developer feedback. Combining expertise in product lifecycle management with web development skills to deliver impactful user solutions.} \\
-%     }}
-%  \end{itemize}
 
  %-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
+ \begin{itemize}[leftmargin=0in, label={}]
     \footnotesize{\item{
-     \textbf{Working Kowledge}{: HTML, CSS, Python, Flask, JavaScript, React.js, Node.js, Express.js, Ionic Framework, REST APIs, MySQL, PostgreSQL, Prisma ORM, Git, Github, Github Actions, AWS, Lambda, EC2, API Gateway, Cloudwatch, OpenAI, Jira } \\
+     \textbf{Working Knowledge}{: HTML, CSS, Python, Flask, Django, Python Unittest, JavaScript, React.js, Vue.js, Node, REST, MySQL, PostgreSQL, Git, Github, Bitbucket, AWS, OpenAI, Jira, LaTeX, Pandoc } \\
      \vspace{4pt} 
-     \textbf{Exposed To}{: Next.js, Redux, Django, TypeScript, Angular.js, Bootstrap, Styled Components, Jest, Python Unittest, AWS SNS, GraphQL, Tailwind, Docker} \\ 
+     \textbf{Exposed To}{: Next.js, Redux, TypeScript, Angular.js, Bootstrap, Styled Components, Jest, GraphQL, Tailwind, Docker} \\ 
     }}
  \end{itemize} 
-% \section{Education}
-%   \resumeSubHeadingListStart
-%     \resumeSubheading
-%       {Working Kowledge}{}
-%       {HTML/CSS, JavaScript, React.js, Node.js, Express.js, Ionic Framework, Web APIs, REST APIs, MySQL, PostgreSQL, Prisma ORM, Git, Github, Github Actions, AWS, Lambda, EC2, API Gateway, Python, Flask}{                       }
-%     \resumeSubheading
-%       {Exposed To}{}
-%       {Redux, Django, TypeScript, Angular.js, Bootstrap, Styled Components, Test-driven Development (Jest)}{}
-%   \resumeSubHeadingListEnd
-
-
-
 
 % %-----------EXPERIENCE-----------
  \vspace{1pt}
 \section{Experience}
   \resumeSubHeadingListStart
+  \resumeSubheading
+      {Software Developer}{Dec 2023 -- Nov 2024}
+      {\textbf{Wisedocs}} {Toronto, ON}
+    \begin{itemize}[leftmargin=0pt, label={}]
+        \footnotesize{\item{
+         {Python, Flask, Django, Vue.js, Javascript, AWS, Unittest, LaTeX, Pandoc} \\
+        }}
+    \end{itemize}
+    \resumeItemListStart
+        \resumeItem{Designed and implemented a full-stack solution using Django, PostgreSQL, and Vue.js to display real-time user statistics within the internal platform, replacing Metabase and enabling team leads to monitor daily performance metrics directly in their workflow, increasing productivity by 60\%.}
+        \resumeItem{Implemented a feedback system for a chat feature using Django and PostgreSQL, designing the database schema, views, and serializers to capture user feedback and enhance AI model training, targeting a 25\% improvement in response accuracy.}
+        \resumeItem{Streamlined system monitoring by integrating AWS CloudWatch, centralizing logs into a single interface using Watchtower, and reducing troubleshooting time by 50\% through separate log streams for production and development instances.}
+        \resumeItem{Maintained and improved document generation systems with LaTeX and Pandoc in a Flask app, regularly updating the system to meet new requirements and deliver high-quality PDF and Word outputs, decreasing support tickets by 10\%.}
+        \resumeItem{Developed a system-wide deadline tracking feature to ensure documents with upcoming deadlines were prioritized across the pipeline,leveraging Vue.js, Django, Flask, Kafka, and unit testing, reducing missed deadlines by 30\%, improving productivity and enhancing customer satisfaction.}
+        \resumeItem{Provided on-call support during 7-day rotations to resolve customer-reported issues quickly and ensure system reliability.}
+    \resumeItemListEnd
+
     \resumeSubheading
-      {Full Stack Software Engineer \& Team Lead}{March 2023 -- Present}
+      {Full Stack Software Engineer \& Team Lead}{March 2023 -- Dec 2023}
       {\textbf{multplAI}} {Toronto, ON}
-    \begin{itemize}[leftmargin=0, label={}]
+    \begin{itemize}[leftmargin=0pt, label={}]
         \footnotesize{\item{
          {Python, Flask, React, Next.js, Javascript, Typescript, AWS, Lambda, EC2, API Gateway, Github Actions, OpenAI, Jira,  Unittest} \\
         }}
     \end{itemize}
-     \begin{itemize}[leftmargin=0.15in, label={}]
-         \small{\item{
-          {Leading a fullstack team focused on building out the backend API, Chrome plugin, and ReactJS \& NextJS frontend to deliver a modern and streamlined job search platform, leveraging AI, ML and web scraping.} \\
-         }}
-     \end{itemize}
       \resumeItemListStart
-        \resumeItem{Facilitated daily stand-ups, sprint planning, ticket scoping, retros, and cross-team demos in an Agile environment using Jira and SCRUM, helping the team resolve blockers and improve delivery cadence.}
         \resumeItem{Architected and implemented a serverless backend platform utilizing Python and Flask on AWS Lambda and API Gateway, delivering improved scalability and reduced infrastructure costs.}
-      \resumeItem{Built out CI/CD automation using Github Actions, using pytest, unittest to acheieve 89\% code coverage for all backend API endpoints, and automating development build  deployments to AWS Lambda.}
-        \resumeItem{Implemented NextJS 13's new App Router and Server Side Rendering on our frontend stack, resulting in a 57\% reduction in initial page load times compared to the original architecture.}
         \resumeItem{Developed and implemented a scalable and efficient job scraping platform utilizing Scrapy and Scrapeops, resulting in a scraping success rate of over 99\% across multiple job boards.}
         \resumeItem{Developed a Chrome plugin enabling seamless autofill of job application forms by integrating with OpenAI and GPT3.5-turbo on our backend, significantly reducing the time required to fill in applications.}
       \resumeItemListEnd
@@ -181,20 +175,13 @@
     \resumeSubheading
       {Frontend Engineer - Freelance}{Feb 2023 -- Aug 2023}
       {\textbf{Tidey Mitchener Consulting}}{Toronto, ON}
-    \begin{itemize}[leftmargin=0, label={}]
+    \begin{itemize}[leftmargin=0pt, label={}]
         \footnotesize{\item{
          {HTML, CSS, Angular, Ionic Framework, TypeScript, JavaScript, AWS S3} \\
         }}
     \end{itemize}
-    % \begin{itemize}[leftmargin=0.15in, label={}]
-    %     \small{\item{
-    %      {Contributing to the creation of mobile-first, responsive application interfaces from wireframes and delivering a dynamic user experience through integrations with backend and third-party infrastructure.} \\
-    %     }}
-    % \end{itemize}
       \resumeItemListStart
-        \resumeItem{Developed a mobile-first and responsive front-end using Ionic and Angular, enhancing user experience and ensuring seamless accessibility across devices.}
-        \resumeItem{Optimized communication channels with the backend to dynamically display data, resulting in significantly improved performance and response times by 67\%.}
-        \resumeItem{Successfully integrated external platforms for payment processing and email automation, streamlining the user journey.}
+        \resumeItem{Developed a mobile-first, responsive front-end using Ionic and Angular, reducing response times by 67\% through optimized backend communication and integrating seamless payment processing and email automation to enhance the user experience.}
       \resumeItemListEnd
 
      \vspace{4pt}
@@ -203,31 +190,10 @@
       {\textbf{Banglalink}}{Dhaka, Bangladesh}
        \vspace{4pt}
       \resumeItemListStart
-        \resumeItem{Led strategic planning and execution processes, defining key metrics to drive business growth through apps and value-added services, consistently maintaining daily revenue above USD 75k}
-        \resumeItem{Coordinated cross-functional teams and collaborated with technical teams to drive product development and formulated comprehensive distribution strategies for online and offline channels.}
-        \resumeItem{Optimized customer journeys for a diverse portfolio of 100+ services and a music platform that achieved number 1 ranking on Google Play within 5 days. Leveraged data analysis to boost annual portfolio revenue by 20\%.}
+        \resumeItem{Led product development and distribution strategies for 100+ services, boosting annual portfolio revenue by 20\% and achieving above USD 75K daily revenue. Optimized customer journeys, driving a music platform to the \#1 rank on Google Play within 5 days, and collaborated across teams to align business growth with data-driven insights.}
     \resumeItemListEnd
 
   \resumeSubHeadingListEnd
-
-
-%-----------PROJECTS-----------
-% \section{Projects}
-%     \resumeSubHeadingListStart
-%       \resumeProjectHeading
-%           {\textbf{Blog API} $|$ \href{https://github.com/LamiSaadat/devs-board-client}{\underline{Repo}} $|$ \emph{Node, Express, PostgreSQL, Prisma}}{Nov 2022}
-%           \resumeItemListStart
-%             \resumeItem{A Hashnode-inspired blog API where users can register, log in, follow other users and perform CRUD operations on posts. Users can also save posts as drafts, like them, and comment on them. Users can also follow other users.}
-%           \resumeItemListEnd
-%       \resumeProjectHeading
-%           {\textbf{Dev's Board} $|$ \href{https://github.com/LamiSaadat/blog-api}{\underline{Repo}} $|$ \emph{React, SASS, Node, Express, MySQL, Knex.js}}{June 2022}
-%           \resumeItemListStart
-%             \resumeItem{A responsive web application where users can create mood boards consisting of images and color palettes based on a keyword. User boards are saved to the database and can be deleted.}
-%           \resumeItemListEnd
-%     \resumeSubHeadingListEnd
-
-
-
 %
 
 %-----------EDUCATION-----------
@@ -235,11 +201,11 @@
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {BrainStation}{Toronto, ON}
-      {Diploma in Web Development}{Apr 2022 - Jul 2022}
+      {BrainStation}{Apr 2022 - Jul 2022}
+      {Diploma in Web Development}{Toronto, ON}
     \resumeSubheading
-      {North South University}{Dhaka, Bangladesh}
-      {Bachelor of Business Administration}{2012 - 2016}
+      {North South University}{}
+      {Bachelor of Business Administration}{Dhaka, Bangladesh}
   \resumeSubHeadingListEnd
 
 
